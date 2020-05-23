@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(20, 161, 243); 
+}
+
+#figure{
+    position: absolute;
+}
+ 
+.hidden{
+    display: none;
+}
+
+.square{ 
+    height: 50px;
+    width: 50px;
+}
+.circle{
+    height: 50px;
+    width: 50px;
+    border-radius:50%;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid  rgb(20, 161, 243);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+}
