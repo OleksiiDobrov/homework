@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +9,20 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-<body>
-    <select name="form" id="choiceform">
-        <option value="square">Square</option>
-        <option value="circle">Circle</option>
-        <option value="triangle">Triangle</option>
-    </select>
-    <input id="colorInput" type="color" title="Выберити цвет фигуры">
-    <div  id="figure"></div>
 
-    
+<body>
+    <input id="addCase" title="Введите запланированное дело на завтра и нажмите 'Add to list'" type="text">
+    <button id="addBtn">Add to list</button>
+    <h1>План дел на завтра</h1>
+    <ul id="toDoList"></ul>
+    <script type="text/template" id="toDoListTemplate">
+        <li
+        class="deal"
+        style=""
+        >{{1}}
+        <button name="remove-button" class = "remove-button">[x]</button>
+    </li>
+    </script>
 </body>
+
 </html>
