@@ -55,7 +55,6 @@ Hamburger.prototype.getCallories = function  (){
     return this.callories + ollToping.sumCallories;
 };
 
-
 const hamburger = new Hamburger(SIZE_SMALL);
 hamburger.addToping(MAYONNAISE);
 hamburger.addToping(POTATOES);
@@ -66,12 +65,10 @@ hamburger.addToping(SEASONING);
 console.log('Callories with sauce:  ' + hamburger.getCallories());
 console.log('Price with sauce:  ' + hamburger.getPrise());
 
-
 const bigHamburger = new Hamburger(SIZE_BIG);
-hamburger.addToping(MAYONNAISE);
-hamburger.addToping(POTATOES);
-hamburger.addToping(SEASONING);
-
+bigHamburger.addToping(MAYONNAISE);
+bigHamburger.addToping(POTATOES);
+bigHamburger.addToping(SEASONING);
 
 console.log('Callories with sauce:  ' + bigHamburger.getCallories());
 console.log('Price with sauce:  ' + bigHamburger.getPrise());
