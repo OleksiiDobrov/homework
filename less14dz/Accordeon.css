@@ -1,0 +1,45 @@
+.accordeon{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.style {
+    background-color: #ccc;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition:  0.7s ;
+}
+.title:hover{
+    background-color: rgb(102, 152, 209);
+}
+.active{
+    background-color: rgb(89, 194, 89);
+}
+
+.body {
+    display: none;
+    padding: 5px 20px 5px 20px;
+    background-color: rgb(249, 251, 252);
+
+}
+
+.show {
+    display: block;
+
+}
+
+.title:after {
+    content: "\002B";
+    color: rgb(8, 8, 8);
+    font-size: 18px;
+    float: right;
+    margin-left: 4px;
+  }
+  
+  
+  .active:after {
+    content: "\2212";
+  }
